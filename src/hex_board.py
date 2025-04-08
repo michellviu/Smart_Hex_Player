@@ -1,11 +1,10 @@
-from hex_board import HexBoard
 class HexBoard:
     
         def __init__(self, size: int):
             self.size = size  # Tamaño N del tablero (NxN)
             self.board = [[0 for _ in range(size)] for _ in range(size)]  # Matriz NxN (0=vacío, 1=Jugador1, 2=Jugador2)
 
-        def clone(self) -> HexBoard:
+        def clone(self) -> "HexBoard":
             """Devuelve una copia del tablero actual"""
             pass
 
