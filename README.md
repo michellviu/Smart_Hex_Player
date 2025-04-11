@@ -48,7 +48,7 @@ heuristic_1 = piezas / componentes_conectados
 
 2. 🚣️ Heurística de Distancia a la Victoria
 
-Utiliza un algoritmo de búsqueda similar a Dijkstra para estimar el número mínimo de movimientos necesarios para conectar los lados del tablero. Se calcula tanto para el jugador como para el oponente, y se considera la diferencia entre ambos:
+Utiliza un algoritmo de búsqueda similar a Dijkstra para calcular el número mínimo de movimientos necesarios para conectar los lados del tablero. Se calcula tanto para el jugador como para el oponente, y se considera la diferencia entre ambos:
 
 ```python
 heuristic_2 = distancia_oponente - distancia_jugador
