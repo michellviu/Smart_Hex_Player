@@ -1,6 +1,6 @@
 import random
 from hex_board import HexBoard
-from player import MinimaxPlayer
+from minimax_player import MinimaxPlayer
 from random_player import RandomPlayer
 
 def play_game(sizeB=5, starting_player=1) -> tuple[list[list[int]], int]:
@@ -59,10 +59,10 @@ def play_multiple_games(num_games=100, size=5):
 
     for i in range(num_games):
         # Elegir aleatoriamente quién comienza (1 o 2)
-        starting_player = random.choice([1, 2])
+        starting= random.choice([1, 2])
 
         # Jugar una partida
-        final_board, winner = play_game(sizeB=size, starting_player=starting_player)
+        final_board, winner = play_game(sizeB=size, starting_player=starting)
 
         # Actualizar los resultados
         results[winner] += 1
@@ -81,4 +81,4 @@ def play_multiple_games(num_games=100, size=5):
 
 # Ejecutar múltiples partidas
 if __name__ == "__main__":
-    play_multiple_games(num_games=200, size=6)
+    play_multiple_games(num_games=100, size=5)
