@@ -16,7 +16,6 @@ class MinimaxPlayer(Player):
     def play(self, game: HexBoard, max_time: float=10.0) -> tuple:
         # Llamar al método minimax con una profundidad inicial, alpha y beta
         start_time = time.time()
-        self.depth = game.size
         self.best_eval = -float("inf")
         self.best_move_global = None
         mejor_movimiento = None
